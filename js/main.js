@@ -27,6 +27,7 @@ const navList = document.getElementById("nav-links");
 if (toggleBtn && navList) {
   toggleBtn.addEventListener("click", () => {
     navList.classList.toggle("show");
+    toggleBtn.classList.toggle("active");
   });
 }
 
@@ -34,5 +35,14 @@ if (toggleBtn && navList) {
 navLinks.forEach(link => {
   link.addEventListener("click", () => {
     navList.classList.remove("show");
+    toggleBtn.classList.remove("active");
   });
 });
+
+AOS.init({
+  offset: 100, // trigger earlier or later
+  duration: 600, // default duration
+  easing: 'ease-in-out', // animation curve
+  once: true, // animate only once
+});
+

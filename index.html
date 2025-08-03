@@ -5,11 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Developer Portfolio</title>
   <link rel="stylesheet" href="css/style.css" />
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 <body>
   <header>
     <nav>
-        <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+        <button id="menu-toggle" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
         <ul id="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -24,12 +37,12 @@
             <div class="right">Designer</div>
         </section>
 
-        <section id="about" class="page-section">
+        <section id="about" class="page-section" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
             <h2>About Me</h2>
             <p>This is the about section.</p>
         </section>
 
-        <section id="projects" class="page-section">
+        <section id="projects" class="page-section" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
             <h2>Projects</h2>
             <div class="project-grid">
                 <div class="project-card">
@@ -51,7 +64,7 @@
         </section>
 
 
-        <section id="contact" class="page-section">
+        <section id="contact" class="page-section" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
             <h2>Contact</h2>
             <p>This is the contact section.</p>
         </section>
