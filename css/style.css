@@ -60,6 +60,15 @@ nav a.active {
   cursor: pointer;
 }
 
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+
 /* HERO SPLIT LAYOUT */
 .split-layout {
   aspect-ratio: 16/7;  /* Or whatever fits your images best */
